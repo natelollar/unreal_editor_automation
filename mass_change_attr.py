@@ -5,7 +5,7 @@ selectedAssets = unreal.EditorUtilityLibrary().get_selected_assets()
 
 for i in selectedAssets:
     print( i.get_fname() )
-    
+    # test changing multiple substance OcclusionRoughnessMetalness sRGB value to 'off'
     i.set_editor_property('srgb', 0)
     print('sRGB:  ' + str(i.get_editor_property('srgb')) )
 
